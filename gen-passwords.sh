@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function generatePassword() {
-    openssl rand -hex 16
+    openssl rand -base64 16
 }
 
 JICOFO_COMPONENT_SECRET=`generatePassword`
